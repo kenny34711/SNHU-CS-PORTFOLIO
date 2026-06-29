@@ -42,3 +42,16 @@ Question 5: How did you interpret the user’s needs and implement them into you
 Question 6: How did you approach designing software? What techniques or strategies would you use in the future to analyze and design a similar software application?
 
 - I approached initially with broad constraints like using specific object models and recommending cloud infrastructure. Going forward, I will use this exact strategy because planning the database and memory constraints early on prevents massive technical debt later in the development cycle.
+
+# CS 255 SYSTEM ANALYSIS
+### DRIVERPASS PROJECT REFLECTION
+
+Project Summary: I moved DriverPass from paper to a cloud-based system so students can book lessons online and staff can manage schedules, cars, and reports.
+
+Positive Impact: I turned mainly complex physical business rules into simple, easily digestable diagrams. My UML activity and sequence diagrams helped map out the whole flow, like logins and bookings so the system makes sense and doesn't get stuck in dead ends.
+
+Improvements: I'll spend more time mapping out unexpected variables (what if's), like errors with the server erros or two people booking the same slot at once. Dealing with those cases sooner would save frustration and time later on.
+
+Users: I took the client's feedback and turning it into a clear list of what the system needs to do. If staff doesn't know how to use the gear, the project fails. User experience is top priority.
+
+My approach: I'll stick with OOP. Starting by defining who is using the system and their roles involved will be my go to process, ensuring code always matches the client's business goals.
