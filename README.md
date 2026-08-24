@@ -55,3 +55,21 @@ Improvements: I'll spend more time mapping out unexpected variables (what if's),
 Users: I took the client's feedback and turning it into a clear list of what the system needs to do. If staff doesn't know how to use the gear, the project fails. User experience is top priority.
 
 My approach: I'll stick with OOP. Starting by defining who is using the system and their roles involved will be my go to process, ensuring code always matches the client's business goals.
+
+## CS 300: DATA STRUCTURES AND ALGORITHMS
+### CS 300 Portfolio Reflection
+
+What was the problem you were solving in the projects for this course?
+- I built a C++ command-line app to help academic advisors easily load, sort, and look up computer science courses and their prerequisites from a CSV file.
+
+How did you approach the problem? Consider why data structures are important to understand.
+- I compared Vectors, Hash Tables, and Binary Search Trees (BST). I chose the BST because it naturally sorts data alphabetically as it loads in, making it super fast to print the list and search for specific classes.
+
+How did you overcome any roadblocks you encountered while going through the activities or project?
+- I ran into a problem with C++ pointer logic and parsing the irregular CSV lines. I got past them by breaking the logic down step-by-step and using ⁠stringstream⁠ to cleanly chop up the data.
+
+How has your work on this project expanded your approach to designing software and developing programs?
+- It showed me the real value of planning. I usually have to script and plan content before it's edited, so mapping out the time and memory complexity before writing any code made sense and made the whole process way smoother.
+
+How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
+- I broke the code down into smaller functions and used dynamic vectors, making the code much cleaner and easier for someone else to jump in and update later.
