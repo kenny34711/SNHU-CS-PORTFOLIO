@@ -73,3 +73,28 @@ How has your work on this project expanded your approach to designing software a
 
 How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
 - I broke the code down into smaller functions and used dynamic vectors, making the code much cleaner and easier for someone else to jump in and update later.
+
+# CS-305 Software Security Portfolio
+
+**Briefly summarize your client, Artemis Financial, and its software requirements.**  
+Artemis Financial is a consulting company that helps clients with everything from retirement and savings to investments and insurance. Because they handle highly sensitive financial data, keeping their operations secure is a top priority. They recognized a major vulnerability in their public web application: it lacked encrypted communications and didn't have a way to verify data integrity. To fix this, they needed to upgrade the app to protect client data during transmission.
+
+**What did you do well when you found your client's software security vulnerabilities? Why is it important to code securely? What value does software security add to a company's overall well-being?**  
+I identified the missing encryption and validation gaps in the original codebase and updated the application using modern, industry-standard cryptography. Dealing with financial applications means secure coding isn't optional; financial data is a massive target, and a simple security breach can easily turn into large complication that can ruin the firm. Building security directly into the software layer so data and assets stay safe but also guarantees regulatory compliance. It give clients total peace of mind that their sensitive data is safe.
+
+**Which part of the vulnerability assessment was challenging or helpful to you?**  
+Getting the OWASP Dependency-Check Maven plugin was both challenging and insightful. The original pom.xml file was outdated so i had to adjust the connection to the NVD API to fix it. However, resolving this issue provided a great hands-on understanding of how static application security testing (SAST) tools work and why keeping your build dependencies updated is a critical security step.
+
+
+**How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation to use?**  
+To keep the application secure, I used Java's keytool to create up a self-signed PKCS12 certificate and upgrade the server from HTTP to HTTPS via RSA 2048-bit encryption. Additionally, I built a custom API endpoint utilizing Java's MessageDigest library to generate secure SHA-256 checksums for data verification. In the future, I will continue using automated SAST/DAST tools and follow the CVE databases to actively catch vulnerabilities and use industry-standard mitigations.
+
+**How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?**  
+I made sure the code and software application were functional and secure with the Spring Boot app with Maven and hit the localhost:8443/hash endpoint in my browser. I verified the HTTPS lock icon in the address bar and confirmed the generation of the SHA-256 hex string.
+To be safe, I ran another OWASP dependency scan, checked the final HTML report to verify no updated libraries flagged any vulnerabilities and ensured the refactor didn't introduce any new security flaws.
+
+**What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?**  
+The tools that will be most helpful moving forward are the Java keytool command-line utility for certificate management, the Spring Boot framework for rapid server deployment, and Maven for dependency management. Additionally, relying on native security libraries like java.security instead of trying to build my own custom encryption logic will be a permanent staple in my coding workflow.
+
+**Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show them from this assignment?**  
+For the project I'd showcase a refactored SslServerApplication.java file to show how I handle secure SHA-256 hashing and RESTful API design. I'd also pull up the application.properties and pom.xml files to showcase my experience with embedding SSL/TLS certificates into a live server environment and baking automated vulnerability scanning directly into the build process.
