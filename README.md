@@ -98,3 +98,15 @@ The tools that will be most helpful moving forward are the Java keytool command-
 
 **Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show them from this assignment?**  
 For the project I'd showcase a refactored SslServerApplication.java file to show how I handle secure SHA-256 hashing and RESTful API design. I'd also pull up the application.properties and pom.xml files to showcase my experience with embedding SSL/TLS certificates into a live server environment and baking automated vulnerability scanning directly into the build process.
+
+# CS 320 software test, and QA reflection
+
+**How can I ensure that my code, program, or software is functional and secure?**
+I ensure code, program or softwares are secure and functional by using automated unit testing with JUnit on areas distinctively. To ensure security, I use strict validation rules and exception handling (IllegalArgumentException). Invalidations are prevented along with more like oversized or null data from corrupting the software.
+
+**How do I interpret user needs and incorporate them into a program?**
+I interpret user needs by translating business needs into requirement-based test cases. Building tests strictly for business requirements ensure the clients rules or restrictions are enforced. This prevents useless test cases and avoids dissatisfaction with the final product.
+
+**How do I approach designing software?**
+I approach software designing with the end vision in mind. I cannot build software, if I cant answer what the software is about, what problem it solves and does it deliver product satisfaction to the users. I build and actively test core object classes and their functionalities, taking notes and constantly making adjustments for improvements. I also prioritize smart data structures like HashMaps to get constant O(1) lookups, which keeps the app fast and efficient as the dataset grows.
+
